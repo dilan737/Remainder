@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemindMate - Login</title>
+    <link rel="stylesheet" href="style1.css">
+
+    <style>
+        .tocs{
+           margin-top: 250px;
+           width: 900px;
+
+        }
+        #wel{
+            font-family:monospace;
+            font-size: 70px;
+            color: darkred;
+            font-style: italic;
+            text-shadow: 3px;
+            text-decoration: solid;
+        }
+        .cee{
+            margin-left: 200px;
+        }
+        .links {
+           display: flex;
+           justify-content: space-between;
+           width: 300px; /* Set this width based on your layout needs */
+}
+
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="RemindMate Logo.png" alt="Remindmate Logo" width="100px" height="100px">
+                </a>
+            </div>
+            <h1 id="brand-name">REMINDMATE</h1>
+            <div class="nav-buttons">
+              <!--- <button type="button" class="btn-log">Log in</button><button type="button" class="btn-get">Get Started</button>  -->
+            </div> 
+        </div>
+        <div class="nav-bar">
+            <a href="../home/home.html">Home</a>|
+            <!--<a href="../keshi/index.php">Reminder</a>-->
+            <a href="../shakya/contact.html">contact</a>|
+            <a href="../shakya/about.html">About Us</a>
+        </div>
+    </header>
+    
+    <main>
+        
+        <section class="login-section">
+            
+            <div class="login-box">
+                <h2>LOGIN</h2>
+                <br>
+              
+                <!-- <div class="social-login"> 
+                    <button class="facebook-login"><img src="fb.png" width="20px" height="20px" style="margin-right: 40px;"> <b> Sing Up With Facebook</b></button>
+                    <button class="google-login" ><img src="googl1.jpeg" width="15px" height="15px" style="margin-right: 40px;"><b>Sing Up With Google</b></button>
+                </div>-->
+
+                <!-- <p style="color: black; font-size: 12px;">No account? sing up with now</p> -->
+                <hr>
+                <br>
+
+                <form action="login.php" method="POST">
+        
+                    <div class="input-box">
+                        <label for="email"><b>Email:</b></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password"><b>Password:</b></label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <button type="submit" class="login-btn" style="width: 150px; height: 30px; background-color: darkgreen;"> LOG IN</button>
+
+                    
+                    <div class="links" >
+                    <a href="#" >Forgot Your Password?</a>
+
+                    <a href="../Admin/src/login_admin.html">Admin</a>
+                    <button class="sign-up-btn" ><a href="singupto.html" style="margin-right: 20px; text-decoration: none; color: black;" >SingUp</a></button>
+                </div>
+                </form>
+
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <h2>REMINDMATE</h2>
+
+        <nav>
+            <a href="contact.html">Contact</a> |
+            <a href="privacy & policy.html">privacy & policy</a> |
+            <a href="Terms&condition.html">Term & Condition</a>
+        </nav>
+        <p>&copy;2024 Remindmate.All rights reserved</p>
+
+    </footer>
+</body>
+</html>

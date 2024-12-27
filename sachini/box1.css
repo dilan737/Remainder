@@ -1,0 +1,85 @@
+.main-content {
+    display: flex;
+    padding: 20px;
+}
+
+.payment-form {
+    
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    height: 950px;
+    margin-top: 0;
+  
+}
+
+
+
+
+
+/* Payment Options */
+.payment-options {
+    margin-bottom: 20px;
+    font-size: 20px;
+   
+}
+
+.payment-options ol {
+    padding: 0;
+    list-style-type: none;
+    color: crimson;
+}
+
+.payment-options .option {
+    margin-bottom: 10px;
+}
+
+.payment-options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment-options label img {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Payment Details */
+.payment-details {
+    margin-bottom: 20px;
+}
+
+.payment-details label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+#img input[type="text"]{
+    width: 350px;
+}
+
+.payment-details input[type="text"], .payment-details select {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+
+}
+
+.payment-details select {
+    appearance: none;
+    margin-bottom: 50px;
+}
+#payNowBtn {
+    width: 200px;
+    height: 35px;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 5px;
+   margin-left: 100px;
+
+}

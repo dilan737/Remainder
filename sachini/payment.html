@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        #img{
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+
+    
+        }
+        #imgs{
+           
+            margin-right: 300px;
+            margin-left: 100px;
+            margin-top: 1px;
+            margin-bottom: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="RemindMate Logo.png" alt="Remindmate Logo" width="100px" height="100px">
+                </a>
+            </div>
+            <h1 id="brand-name">REMINDMATE</h1>
+            <div class="nav-buttons">
+                <img src="profile_pic.png" width="60px" height="60px">  
+            </div> 
+        </div>
+        <div class="nav-bar">
+            <a href="../home/rhome.html">Home</a>|
+            <a href="../keshi/index.php">Reminder</a>
+        <a href="../shakya/rcontact.html">contact</a>|
+        <a href="../shakya/rabout.html">About Us</a>
+        </div>
+    </header>
+            
+            <script>
+                function hideAll() {
+                     document.getElementById("homeDetails").style.display = "none";
+                     document.getElementById("contactDetails").style.display = "none";
+                     document.getElementById("feedDetails").style.display = "none";
+                     document.getElementById("paymentForm").style.display = "none";
+                     document.getElementById("summaryDetails").style.display = "none";
+                     
+                     
+                    }
+
+            function showHome() {
+             hideAll();
+             document.getElementById("homeDetails").style.display = "block";
+             }
+
+            function showContact() {
+            hideAll();
+            document.getElementById("contactDetails").style.display = "block";
+             }
+
+            function showFeed() {
+            hideAll();
+            document.getElementById("feedDetails").style.display = "block";
+             }
+
+            function showPayment() {
+            hideAll();
+            document.getElementById("paymentForm").style.display = "block";
+             }
+
+            function showSummary() {
+            hideAll();
+            document.getElementById("summaryDetails").style.display = "block";
+}
+            </script>
+        
+          
+          
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+               
+                <ul>
+                    <!-- Home -->
+                    <li class="step active-step" onclick="showHome()">1<br>Home</li>
+                
+                    <!-- Contact -->
+                    <li class="step active-step" onclick="showContact()">2<br>Contact Us</li>
+                
+                    <!-- Feedback -->
+                    <li class="step active-step" onclick="showFeed()">3<br>Feedback</li>
+                
+                    <!-- Payment -->
+                    <li class="step active-step" onclick="showPayment()">4<br>Payment</li>
+                
+                    <!-- Summary -->
+                    <li class="step active-step" onclick="showSummary()">5<br><a href="read.php" style="color: white; text-decoration: none;">Summary</a></li>
+                </ul>
+            </aside>
+
+            
+
+            <div class="payment-form">
+                <p style="margin-left: 450px; color:darkslategrey;" ><marquee> Welcome our Payment System .</marquee></p>
+                <!-- Home Details -->
+                <div id="homeDetails" class="content" style="display:none;">
+                    <p style="color: black;">Welcome to the Home page!</p>
+                </div>
+            
+                <!-- Contact Details -->
+                <div id="contactDetails" class="content" style="display:none;">
+                    <p style="color: black;">Contact us for more details!</p>
+                </div>
+            
+                <!-- Feedback Details -->
+                <div id="feedDetails" class="content" style="display:none;">
+                    <p style="color: black;">Leave your feedback here!</p>
+                </div>
+               <!-- Summary Details -->
+                <div id="summaryDetails" class="content" style="display:none;">
+                    <p style="color: black;"><a href="read.php">Payment Succses full</a></p>
+                </div>
+            
+            
+                 
+                    <!-- Your payment -->
+
+                    <div id="fome" class="content" >
+                    <form id="paymentForm" style="display:none;"  action="pay.php" method="POST">
+                        
+
+
+                        <div class="payment-details" id="cardDetails">
+                             <div id="img">
+                            
+                            <div>
+                            <label for="cardNumber">Pament methode</label>
+                            <input type="text" name="pmethod" id="pmethod" placeholder="" >
+
+
+
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" name="cardNumber" id="cardNumber" placeholder="e.g. 5664 **** **** ****" >
+                            
+                            
+                            
+                            <label for="cardName">Name on Card</label>
+                            <input type="text" name="cardName" id="cardName" placeholder="e.g. card name">
+                            
+
+                            
+                            <label for="expiryDate">Expiration Date</label>
+                            <input type="text" name="expiryDate" id="expiryDate" placeholder="MM/YY">
+                    
+                            <label for="ccv">CCV</label>
+                            <input type="text" name="ccv" id="ccv" placeholder="CCV">
+                    
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city">
+
+                            
+                            <label for="contactNumber">Contact Number</label>
+                            <input type="text" name="contactNumber" id="contactNumber">
+                    
+                            <label for="country">Country</label>
+                            <input type="text" name="country" id="country">
+
+                            <br>
+                            
+                                
+                            <button type="submit" id="payNowBtn" style="font-size: 18px;">Pay Now</button>
+                            <div id="loading-spinner" class="spinner"></div>
+                        </div>
+                        <div id="imgs">
+                            <img src="download1.jpeg" width="350px" height="200px">
+                        </div>
+                        </div>
+                        </div>
+                        
+                     </form>
+                    </div>
+            </div>
+            </div>
+        </div>
+                   <script>
+                        // Get all payment options and details sections
+                        const paymentOptions = document.getElementsByName('payment');
+                        const paypalDetails = document.getElementById('paypalDetails');
+                        const bankDetails = document.getElementById('bankDetails');
+                        const cardDetails = document.getElementById('cardDetails');
+                    
+                        // Function to show/hide relevant details based on selected option
+                        function togglePaymentDetails() {
+                            // Hide all sections initially
+                            paypalDetails.style.display = 'none';
+                            bankDetails.style.display = 'none';
+                            cardDetails.style.display = 'none';
+                    
+                            // Show the relevant section based on the selected option
+                            if (document.getElementById('paypal').checked) {
+                                paypalDetails.style.display = 'block'; // Show PayPal details
+                            } else if (document.getElementById('bank').checked) {
+                                bankDetails.style.display = 'block'; // Show Bank Transfer details
+                            } else if (document.getElementById('card').checked) {
+                                cardDetails.style.display = 'block'; // Show Card details
+                            }
+                        }
+                    
+                        // Add event listeners to all payment options
+                        paymentOptions.forEach(option => {
+                            option.addEventListener('change', togglePaymentDetails);
+                        });
+                    
+                        // Initial check to display the appropriate section
+                        togglePaymentDetails();
+                    </script>
+                     <div>
+                        <footer>
+                            <h2>REMINDMATE</h2>
+                    
+                            <nav>
+                                <a href="contact.html">Contact</a> |
+                                <a href="privacy & policy.html">privacy & policy</a> |
+                                <a href="Terms&condition.html">Term & Condition</a>
+                            </nav>
+                            <p>&copy;2024 Remindmate.All rights reserved</p>
+                    
+                        </footer>
+                        </div>
+                <script src="java.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.add button {
+    background-color: #2b6777;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add button:hover {
+    background-color: #1a5a66;
+}
+
+.add button a {
+    color: white;
+    text-decoration: none;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+.table th {
+    background-color: #2b6777;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #e1e1e1;
+}
+
+.up button, .del button {
+    background-color: #2b6777;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.up button:hover {
+    background-color: #195b66;
+}
+
+.del button {
+    background-color: #d9534f;
+}
+
+.del button:hover {
+    background-color: #b33b39;
+}
+
+.up button a, .del button a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    background-image: url(".jpg");
+    background-image: url("../image/Background images/celebration.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container to center the form */
+.container {
+    max-width: 500px;
+    margin: 50px auto; /* Centers the form horizontally and adds top space */
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input, Select, and Date/Time Styles */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    margin: 10px 0 20px 0; /* Adds space between fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+select {
+    color: #555;
+    background-color: #fff;
+}
+
+/* Radio Button Styles */
+.fradio ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.fradio li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.fradio input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Button Styles */
+button {
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: green; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%; /* Make container responsive */
+    }
+}
+.img {
+    /* The image used */
+    background-image: url("house.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

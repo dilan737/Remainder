@@ -1,0 +1,75 @@
+.container {
+    width: 70%;
+    margin: 50px auto;
+    background:  silver;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    background-position:0%;
+    margin-bottom: 50px;
+   height: 1350px;
+   
+
+   
+    
+
+    
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+
+label {
+    display:block;
+    margin: 10px 0 5px;
+}
+.from-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}   
+.form-group input[type="text"] {
+        width: 350px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        justify-content: space-between;
+}
+    
+    input[type="date"], 
+    input[type="tel"], 
+    input[type="email"], 
+    input[type="password"], 
+    input[type="text"] {
+        width: 350px;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.login-btn1 {
+    width: 100px;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 50px;
+    height: 50px;
+}

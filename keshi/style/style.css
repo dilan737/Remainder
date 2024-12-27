@@ -1,0 +1,300 @@
+body {
+    background-color: #ffffff;
+    background-image: url("../image/Background images/celebration.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    font-family: ;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-position: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    filter: blur(6px); 
+    z-index: -1;
+}
+.nav-container{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:100 !important;
+}
+#logo{
+    display:block;
+    width: 200px;
+    height: auto;
+    float:inline-start;
+}
+#brand-name{
+    letter-spacing: 5px;
+    color: #fff;
+    letter-spacing: 5px;
+    text-align:center;
+    text-align: center;
+}
+.nav-bar{
+    padding:0px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content:end;
+    z-index:100 !important;
+}
+.nav-bar a{
+    color:var(--primary);
+    text-decoration: none;
+    font-weight: 575;
+    font-size:20px;
+    padding:10px;
+    
+}
+.nav-bar a:hover{
+    background-color: #ffffffe3;
+    color:black;
+}
+.nav-bar a.active{
+    background-color: rgba(4, 102, 167, 0.705);
+    border-radius: 3px;
+    color: white;
+}
+header{
+    padding: 10px;
+    background-color:#2a1b3dc0;
+
+}
+button{
+    display: inline-block;
+    margin: 0cm;
+    padding: 20px 30px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #D83F87;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 25px;
+}
+button.btn-log{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px 0px 0px 5px;
+    padding:8px;
+    margin: 0px;
+    font-weight: 700;
+    color:black;
+    font-size: 15px;
+
+}
+button.btn-get{
+    padding: 10px;
+    background-color:  #D83F87;
+    border: 2px solid #ffffffc0;
+    border-radius: 5px;
+    font-weight:700;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    margin:0cm;
+    
+}
+.div-container {
+    width: 100%;
+    height:600px;
+    background-image: url('../image/Background images/uni_studnets.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin:0px;
+    text-align: center;
+}
+.content{
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+}
+.content h1{
+    font-family:Arial, Helvetica, sans-serif;
+
+    font-size: 40px;
+}
+.div-whywe{
+    background-color:#2a1b3dd2 ;
+    padding: 20px 100px 100px 100px;
+    text-align: center;
+}
+.div-whywe h1{
+    font-size: 60px;
+    color: #f1f1f1;
+}
+.div-whywe p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 2;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 100px 20px 100px 20px;
+}
+* {
+    box-sizing: border-box;
+}
+
+  h1, h6 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #a4b3b6bb;
+    padding: 20px;
+    gap: 20px;
+}
+
+.frame {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #555;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Feedbacks {
+    max-width: 250px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+.row {
+      flex-direction: column;
+}
+
+.frame {
+      width: 150px;
+      height: 150px;
+}
+}
+
+.headingofrow{
+    background-color:#1f1f1f;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+.plans{
+    background-color:#2a1b3dee;
+    padding:10px;
+    margin: 0;
+    text-align:center;
+}
+.plans h1,.plans h3{
+    color: #ffffff;
+}
+
+.plans button{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ff0077b7;
+    padding: 20px 2px 10px 2px;
+    margin-bottom:10px;
+    font-size: 25px;
+}
+.plans button:last-child{
+    margin-bottom: 0;
+}
+.plans a{
+    text-decoration: none;
+    color: #f1f1f1;
+
+}
+.FAQ{
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px;
+}
+.FAQ h1{
+    color:hsl(0, 0%, 57%);
+    font-size: 40px;
+}
+.FAQ li{
+    background-color: #ffffff6e;
+    padding: 5px;
+    margin-top: 20px;
+    list-style-type: square;
+}
+.FAQ p{
+    color: #fff;
+    text-align: justify;
+}
+footer {
+    background-color: #333;      
+    color: #fff;                 
+    text-align: center;          
+    padding: 20px 0;             
+    font-family: Arial, sans-serif; 
+}
+  
+footer h2 {
+    margin: 0;                  
+    font-size: 24px;            
+    font-weight: bold;
+}
+  
+  footer nav {
+    margin: 10px 0;             
+}
+  
+footer nav a {
+    color: #fff;                
+    text-decoration: none;      
+    margin: 0 10px;             
+    font-size: 16px;
+}
+  
+  footer nav a:hover {
+    text-decoration: underline; 
+}
+  
+  footer p {
+    font-size: 14px;           
+    margin-top: 15px;           
+}
+  
+footer a {
+    cursor: pointer;            
+}
+  
+footer p, footer nav a {
+    font-weight: 300;     
+}
+  

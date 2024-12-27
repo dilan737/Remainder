@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .login-container h2 {
+            text-align: center;
+            color: #2A1B3D;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            color: #44318D;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #A4B3B6;
+            border-radius: 5px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #D83F87;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-group button:hover {
+            background-color: #E98074;
+        }
+        .error-message {
+            color: red;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Admin Login</h2>
+    <form action="admin_login.php" method="POST">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required placeholder="Enter username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required placeholder="Enter password">
+        </div>
+        <div class="form-group">
+            <button type="submit" name="login">Login</button>
+        </div>
+        <div class="error-message">
+            <!-- This will display login error message (if any) -->
+            <?php if(isset($_GET['error'])) { echo $_GET['error']; } ?>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

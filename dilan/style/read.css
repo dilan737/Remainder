@@ -1,0 +1,169 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafc; /* Light background color */
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+}
+
+/* Header styling */
+header {
+    background-color: #2a1b3d; /* Dark header background */
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Padding for header */
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Padding on sides */
+}
+
+
+
+#brand-name {
+    letter-spacing: 5px; /* Spacing for brand name */
+    text-align: center;
+    font-size: 24px; /* Font size for brand name */
+}
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1); /* Slight background for navigation */
+}
+.nav-bar a {
+    color: #fff; /* White text for nav links */
+    text-decoration: none;
+    padding: 10px 20px; /* Padding for links */
+    font-size: 16px; /* Font size for nav links */
+}
+
+
+
+
+.nav-bar a:hover {
+    background-color: #d83f87; /* Hover background color */
+    color: white; /* White text on hover */
+}
+
+/* Container for table and content */
+.container {
+    width: 80%; /* Fixed width for content */
+    margin: 50px auto; /* Center the container */
+    background-color: #fff; /* White background for content */
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Add button styling */
+.add {
+    text-align: right;
+    margin-top:20px ;
+
+    margin-bottom: 9px;
+ 
+    margin-left: 50px;
+}
+
+.add button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green button */
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.add button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.add button a {
+    text-decoration: none;
+    color: #fff; /* White text for link */
+}
+
+/* Table styling */
+.table {
+    width: 75%;
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 25; /* Space above the table */
+    margin-left: 200px;
+    margin-right: 50px;
+
+    background-color: white;
+}
+.table th, .table td {
+    padding: 15px; /* Padding for table cells */
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light border */
+ 
+}
+
+
+
+
+.table th {
+   background-color: #064539; /* Dark header background */
+    color: white; /* White text for header */
+    text-transform: uppercase; /* Uppercase for headers */
+}
+.table tr:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}
+
+
+
+.table td {
+    font-size: 14px;
+    color: #555; /* Dark gray for text */
+}
+
+
+
+/* Button container for operations */
+.up, .del {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Update and Delete button styling */
+.up button, .del button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.up button {
+    background-color: #0755cb; /* Blue for update */
+}
+
+.up button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.del button {
+    background-color: #dc3545; /* Red for delete */
+}
+
+.del button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.up button a, .del button a {
+    color: white; /* White text for button links */
+    text-decoration: none;
+}

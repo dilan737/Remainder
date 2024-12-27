@@ -1,0 +1,262 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:azure
+}
+
+.nav-container{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:100 !important;
+}
+#logo{
+    display:block;
+    width: 200px;
+    height: auto;
+    float:inline-start;
+}
+#brand-name{
+    letter-spacing: 5px;
+    color: #fff;
+    letter-spacing: 5px;
+    text-align:center;
+    text-align: center;
+}
+.nav-bar{
+    padding:0px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content:end;
+    z-index:100 !important;
+}
+.nav-bar a{
+    color:var(--primary);
+    text-decoration: none;
+    font-weight: 575;
+    font-size:20px;
+    padding:10px;
+    
+}
+.nav-bar a:hover{
+    background-color: #ffffffe3;
+    color:black;
+}
+.nav-bar a.active{
+    background-color: rgba(4, 102, 167, 0.705);
+    border-radius: 3px;
+    color: white;
+}
+header{
+    padding: 10px;
+    background-color:#2a1b3dc0;
+
+}
+button{
+    display: inline-block;
+    margin: 0cm;
+    padding: 20px 30px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #D83F87;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 25px;
+}
+button.btn-log{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px 0px 0px 5px;
+    padding:8px;
+    margin: 0px;
+    font-weight: 700;
+    color:black;
+    font-size: 15px;
+
+}
+button.btn-get{
+    padding: 10px;
+    background-color:  #D83F87;
+    border: 2px solid #ffffffc0;
+    border-radius: 5px;
+    font-weight:700;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    margin:0cm;
+    
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.login-box {
+    background-color: lightslategrey;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.social-login button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.facebook-login {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+}
+
+.google-login {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    
+}
+
+.input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-box label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    background-color: darkgreen;
+    color: black;
+   
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+.sign-up-btn {
+    background-color: #D83F87;
+    color: black;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    width: 120px;
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: right;
+    
+
+}
+
+footer {
+    background-color: #333;      
+    color: #fff;                 
+    text-align: center;          
+    padding: 20px 0;             
+    font-family: Arial, sans-serif; 
+    margin-top: 200px;
+    height: 120px;
+}
+  
+footer h2 {
+    margin: 0;                  
+    font-size: 24px;            
+    font-weight: bold;
+}
+  
+  footer nav {
+    margin: 10px 0;             
+}
+  
+footer nav a {
+    color: #fff;                
+    text-decoration: none;      
+    margin: 0 10px;             
+    font-size: 16px;
+}
+  
+footer nav a:hover {
+    text-decoration: underline; 
+}
+  
+  footer p {
+    font-size: 14px;           
+    margin-top: 15px;           
+}
+  
+footer a {
+    cursor: pointer;            
+}
+  
+footer p, footer nav a {
+    font-weight: 300;     
+}
+  
+

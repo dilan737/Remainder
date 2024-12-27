@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+#topic{
+    text-align: center;
+    text-decoration: double;
+    font-size: 20px;
+    
+    text-shadow: 5px;
+    color: red;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:dimgrey;
+   
+    height: 1700px;
+
+}
+
+.nav-container{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:100 !important;
+    height: 70px;
+}
+#logo{
+    display:block;
+    width: 200px;
+    height: auto;
+    float:inline-start;
+}
+#brand-name{
+    letter-spacing: 5px;
+    color: #fff;
+    letter-spacing: 5px;
+    text-align:center;
+    text-align: center;
+}
+.nav-bar{
+    padding:0px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content:end;
+    z-index:100 !important;
+}
+.nav-bar a{
+    color:var(--primary);
+    text-decoration: none;
+    font-weight: 575;
+    font-size:20px;
+    padding:10px;
+    
+}
+.nav-bar a:hover{
+    background-color: #ffffffe3;
+    color:black;
+}
+.nav-bar a.active{
+    background-color: rgba(4, 102, 167, 0.705);
+    border-radius: 3px;
+    color: white;
+}
+header{
+    padding: 10px;
+    background-color:#2a1b3dc0;
+
+}
+button{
+    display: inline-block;
+    margin: 0cm;
+    padding: 20px 30px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #D83F87;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 25px;
+}
+button.btn-log{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px 0px 0px 5px;
+    padding:8px;
+    margin: 0px;
+    font-weight: 700;
+    color:black;
+    font-size: 15px;
+
+}
+button.btn-get{
+    padding: 10px;
+    background-color:  #D83F87;
+    border: 2px solid #ffffffc0;
+    border-radius: 5px;
+    font-weight:700;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    margin:0cm;
+    
+}
+.container {
+    width: 70%;
+    margin: 50px auto;
+    background:  white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    background-position:0%;
+    margin-bottom: 50px;
+   height: 1350px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+
+label {
+    display:block;
+    margin: 10px 0 5px;
+}
+.from-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}   
+.form-group input[type="text"] {
+        width: 350px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        justify-content: space-between;
+}
+    
+    input[type="date"], 
+    input[type="tel"], 
+    input[type="email"], 
+    input[type="password"], 
+    input[type="text"] {
+        width: 350px;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #333;      
+    color: #fff;                 
+    text-align: center;          
+    padding: 20px 0;             
+    font-family: Arial, sans-serif;
+   
+}
+  
+footer h2 {
+    margin: 0;                  
+    font-size: 24px;            
+    font-weight: bold;
+}
+  
+footer nav {
+    margin: 10px 0;             
+}
+  
+footer nav a {
+    color: #fff;                
+    text-decoration: none;      
+    margin: 0 10px;             
+    font-size: 16px;
+}
+  
+  footer nav a:hover {
+    text-decoration: underline; 
+}
+  
+  footer p {
+    font-size: 14px;           
+    margin-top: 15px;           
+}
+  
+footer a {
+    cursor: pointer;            
+}
+  
+footer p, footer nav a {
+    font-weight: 300;     
+}
+  
